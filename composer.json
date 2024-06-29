@@ -1,0 +1,45 @@
+{
+  "name": "issbox/yii2-jwt",
+  "description": "JWT based on Icobucci",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "yii 2",
+    "jwt"
+  ],
+  "authors": [
+    {
+      "name": "Issbox",
+      "email": "sizemail@gmail.com",
+      "homepage": "https://sizeg.tk"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "lcobucci/jwt": "*",
+    "yiisoft/yii2": "~2.0.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "issbox\\jwt\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "issbox\\jwt\\tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  }
+}
